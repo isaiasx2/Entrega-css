@@ -1,0 +1,84 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;  /*1 rem = 10px*/ 
+
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;  /*hereda las propiedades de su padre*/
+    margin: 0;
+    padding: 0;
+   
+}
+
+
+.encabezado{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    height: 20vh;
+    width: 100vw;
+    background-color: #ffffff; 
+    
+}
+.encabezado header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 50%;
+    
+    
+
+}
+
+
+.nav-principal{
+    height: 20vh;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    
+    align-items: center;
+}
+
+
+.nav-principal ul{
+    display: flex;
+    column-gap: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    margin-right:2.5rem ;
+    padding: .5rem;
+    height: 100%;
+    align-items: center;
+    
+    
+}
+
+.nav-principal ul a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo{
+    max-width: 10vw;
+    max-height: 20vh;
+    padding: 1rem;
+    border-radius: 50%;
+
+    
+}
+
+.contenedor-principal{
+    height: 60vh;
+    background-color:aquamarine;
+}
+
+.pie{
+    height: 20vh;
+    background-color: aqua;
+}
+
