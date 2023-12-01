@@ -33,6 +33,11 @@ html {
 
 }
 
+.logo{
+    flex-grow: 1;
+    object-fit: cover;
+}
+
 
 .nav-principal{
     height: 20vh;
@@ -48,7 +53,6 @@ html {
     display: flex;
     column-gap: 1rem;
     flex-direction: row;
-    justify-content: space-between;
     list-style: none;
     margin-right:2.5rem ;
     padding: .5rem;
@@ -58,9 +62,15 @@ html {
     
 }
 
-.nav-principal ul a{
+
+.btn{
     text-decoration: none;
     color: black;
+    scale: 1;
+    transition: all ease .3s;
+}
+.btn{
+    transform:scale(.9);
 }
 
 .logo{
@@ -74,7 +84,20 @@ html {
 
 .contenedor-principal{
     height: 60vh;
+
     background-color:aquamarine;
+}
+
+.division_1{
+    background-color: blue;
+    height: 100%;
+    width: 50vw;
+
+}
+.division_2{
+    background-color: blueviolet;
+    height: 100%;
+    width: 50vw;
 }
 
 .pie{
