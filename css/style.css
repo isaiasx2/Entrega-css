@@ -1,13 +1,20 @@
+
+:root{
+    --main-color:#F5F7F8 ;
+}
+
+
 html {
     box-sizing: border-box;
-    font-size: 62.5%;  /*1 rem = 10px*/ 
+    font-size: 62.5%;  
 
 }
 
 *, *:before, *:after {
-    box-sizing: inherit;  /*hereda las propiedades de su padre*/
+    box-sizing: inherit;  
     margin: 0;
     padding: 0;
+    background-color: var(--main-color);
    
 }
 
@@ -20,7 +27,7 @@ html {
     justify-content: space-between;
     height: 20vh;
     width: 100vw;
-    background-color: #ffffff; 
+    
     
 }
 .encabezado header{
@@ -36,6 +43,8 @@ html {
 .logo{
     flex-grow: 1;
     object-fit: cover;
+    filter: brightness(1.1);
+    mix-blend-mode:darken;
 }
 
 
@@ -63,28 +72,32 @@ html {
 }
 
 
-.btn{
+.btn,.btn a{
     text-decoration: none;
     color: black;
     scale: 1;
     transition: all ease .3s;
 }
-.btn{
-    transform:scale(.9);
+.btn:hover{
+    scale:1.1;
 }
 
 .logo{
     max-width: 10vw;
     max-height: 20vh;
     padding: 1rem;
-    border-radius: 50%;
+    border-radius: 50%;   
+    transition: all ease .5s;
+}
 
-    
+.logo:hover{
+    transform: rotate(360deg);
 }
 
 .contenedor-principal{
     height: 60vh;
-
+    display: flex;
+    flex-wrap: nowrap;
     background-color:aquamarine;
 }
 
