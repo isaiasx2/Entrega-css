@@ -34,6 +34,7 @@ html {
 }
 .encabezado header{
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     width: 50%;
@@ -43,7 +44,8 @@ html {
 }
 
 .logo{
-    flex-grow: 1;
+    flex-grow: 2;
+    
     object-fit: cover;
     filter: brightness(1.1);
     mix-blend-mode:darken;
@@ -85,6 +87,7 @@ html {
 }
 
 .logo{
+    flex-grow: 2;
     max-width: 10vw;
     max-height: 20vh;
     padding: 1rem;
@@ -101,6 +104,8 @@ html {
     width: 95vw;
     margin-top: 2rem;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
     
        
     
@@ -129,6 +134,7 @@ html {
     background-position-x: center;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items:center;
     
    
@@ -156,30 +162,44 @@ html {
 
 .slogan h1, p{
     color: #F5F7F8;
+
     
 }
-
-
-
-.division3{
-    order: 3;
-    margin-top: .5rem;
-    height: 20rem;
-    width: 100%;
-    background-color: yellow;
+.slogan p{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.boton-redes{
+    display: flex;
+    margin: .2rem;
+    max-height: 5rem;
+    font-size: smaller;
     border-radius: .5rem;
-    float: left;
+    margin-bottom: .5rem;
+    column-gap: .2rem;
+
     
     
+   
     
+
+}
+.boton-redes button{
+    background-color: rgba(5, 5, 5, .5);
+    color: #F5F7F8;
 }
 
-.pie{
-    display: block;
-    width: 95vw;
-    margin: 0 auto;
+
+
+
     
-}
+    
+    
+    
+
+
+
+
 
 
 
